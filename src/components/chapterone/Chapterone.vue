@@ -28,8 +28,10 @@ const emit = defineEmits(["finished", "isChtwo"]);
 const failmsghandler = () => {
   x.value = Math.floor(Math.random() * 10);
   isHorror.value = false;
-
-  imageSrc.value = import.meta.env.BASE_URL + `pictures/horror${x.value}.png`;
+  requestAnimationFrame(() => {
+    imageSrc.value = import.meta.env.BASE_URL + `pictures/horror${x.value}.png`;
+    isHorror.value = true; // 顯示圖片
+  });
   switch (x.value) {
     case 0:
       failmsg.value = "你就乖乖跟我去陰曹地府吧";
@@ -72,7 +74,6 @@ const failmsghandler = () => {
       playSound("fail9");
       break;
   }
-  isHorror.value = true;
   horrorActive.value = true;
 };
 let timerId = null;
