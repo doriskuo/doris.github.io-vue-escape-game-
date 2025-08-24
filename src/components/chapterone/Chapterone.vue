@@ -556,15 +556,15 @@ onUnmounted(() => {
       font-size: 12px
     .text1
       top: 150px
-      left: 50px
+      left: 30px
       animation: typing 3s steps(25, end) 1s forwards
     .text2
         top: 230px
-        left: 50px
+        left: 30px
         animation: typing 3s steps(25, end) 5s forwards
     .text3
         top: 310px
-        left: 50px
+        left: 30px
         animation: typing 3s steps(25, end) 9s forwards
     .countdown
       font-size: 40px
@@ -576,14 +576,14 @@ onUnmounted(() => {
       z-index: 5
       position: absolute
       opacity: 0
-      top: 30px
-      left: 90px
+      top: 20px
+      left: 60px
       width: auto
       height: auto
       user-select: none
       pointer-events: none
       img
-        width: 300px
-        height: 300px
+        width: 70vw
+        height: auto
         pointer-events: none
 </style>
