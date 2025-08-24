@@ -569,15 +569,15 @@ onUnmounted(() => {
     .countdown
       font-size: 40px
       top: 320px
-      left: 270px
+      left: 250px
       animation: blink 1s 12s infinite
 
     .sprintline
       z-index: 5
       position: absolute
       opacity: 0
-      top: 20px
-      left: 60px
+      top: 10px
+      left: 50px
       width: auto
       height: auto
       user-select: none
