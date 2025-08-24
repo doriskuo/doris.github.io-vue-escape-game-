@@ -3,6 +3,7 @@
 import { ref } from "vue";
 import { playSound, stopSound, playRunSound } from "./sounds";
 import { onUnmounted } from "vue";
+const sprintlineSrc = import.meta.env.BASE_URL + "pictures/sprintline.png";
 const isShow = ref(false);
 const isOn = ref(false);
 const isOff = ref(true);
@@ -225,7 +226,7 @@ onUnmounted(() => {
     </button>
     <button class="next" v-if="isNext" @click="goNext">開始下一章</button>
     <div class="sprintline" :class="{ active: sprintActive }">
-      <img src="/pictures/sprintline.png" />
+      <img :src="sprintlineSrc" />
     </div>
     <div class="horror" v-if="isHorror" :class="{ active: horrorActive }">
       <img :src="imageSrc" />
@@ -299,11 +300,16 @@ onUnmounted(() => {
       border: 1px solid gray
       display: flex
       align-items: flex-end
+      pointer-events: none
+      user-select: none
       .hp
           width: 50px
           min-height: 0px
           max-height: 380px
           background-color: red
+          pointer-events: none
+          user-select: none
+
 
   .counter
       position: absolute
@@ -312,6 +318,7 @@ onUnmounted(() => {
       color: #fff
       font-size: 36px
       animation: blink 1s infinite
+      pointer-events: none
 
   .success
       z-index: 5
