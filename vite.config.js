@@ -6,7 +6,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/doris.github.io-vue-escape-game-/",
+  base: "/vue-escape-game/",
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {

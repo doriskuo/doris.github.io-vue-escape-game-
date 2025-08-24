@@ -26,7 +26,7 @@ const emit = defineEmits(["finished", "isChtwo"]);
 
 const failmsghandler = () => {
   x.value = Math.floor(Math.random() * 10);
-  imageSrc.value = `/pictures/horror${x.value}.png`;
+  imageSrc.value = import.meta.env.BASE_URL + `pictures/horror${x.value}.png`;
   switch (x.value) {
     case 0:
       failmsg.value = "你就乖乖跟我去陰曹地府吧";
