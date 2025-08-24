@@ -44,4 +44,22 @@
     p
         font-size: 18px
         padding: 0px 200px
+
+@media screen and (max-width:1200px)
+  .about
+    h3
+        font-size: 22px
+        margin: 30px 0px
+    p
+        font-size: 14px
+        padding: 0px 100px
+
+@media screen and (max-width:750px)
+  .about
+    h3
+        font-size: 20px
+        margin: 15px 0px
+    p
+        font-size: 12px
+        padding: 0px 50px
 </style>

@@ -219,6 +219,62 @@ onMounted(() => {
         left: 100px
         animation: typing 3s steps(25, end) 14s forwards
 
+
+@media screen and (max-width:1000px)
+    .opening
+        .container
+            position: absolute
+            width: 500px
+            height: 500px
+            opacity: 0
+            animation: showup 2s 4s forwards, moveintwo 3s 4s forwards
+        .text
+            font-size: 16px
+
+@media screen and (max-width:800px)
+    .opening
+        .container
+            position: absolute
+            width: 300px
+            height: 300px
+            opacity: 0
+            animation: showup 2s 4s forwards, moveinthree 3s 4s forwards
+        .text
+            font-size: 12px
+@media screen and (max-width:500px)
+    .opening
+        .container
+            position: absolute
+            width: 300px
+            height: 300px
+            opacity: 0
+            animation: showup 2s 4s forwards, moveinfour 3s 4s forwards
+        .text
+            font-size: 10px
+        .text1
+            top: 100px
+            left: 30px
+            animation: typing 3s steps(25, end) 7s forwards
+        .text2
+            top: 180px
+            left: 30px
+            animation: typing 3s steps(25, end) 11s forwards
+        .text3
+            top: 260px
+            left: 30px
+            animation: typing 3s steps(25, end) 14s forwards
+        .exit
+            position: absolute
+            right: 50px
+            bottom: 300px
+            width: 30px
+            height: 30px
+            background: #fff
+            box-shadow: 0 0 20px 10px gray
+            border-radius: 30px
+            opacity: 0
+            animation: showup 2s 2s forwards , showoff 2s 5s forwards
+
 @keyframes opening
     0%
         transform: scale(0) rotate(0deg)
@@ -244,6 +300,27 @@ onMounted(() => {
     100%
         left: 600px
         transform: scale(0.5)
+
+@keyframes moveintwo
+    0%
+        left: -200px
+    100%
+        left: 300px
+        transform: scale(0.5)
+
+@keyframes moveinthree
+    0%
+        left: -200px
+    100%
+        left: 260px
+        transform: scale(0.4)
+
+@keyframes moveinfour
+    0%
+        left: -400px
+    100%
+        left: 70px
+        transform: scale(0.2)
 
 @keyframes sweat
     0%

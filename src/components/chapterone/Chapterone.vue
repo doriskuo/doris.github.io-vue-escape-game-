@@ -500,4 +500,90 @@ onUnmounted(() => {
   100%
     opacity: 1
     transform: scale(0.8)
+
+
+@media screen and (max-width:500px)
+  .chapter-wrapper
+    .fail,.success
+      font-size: 12px
+
+    .hpbox
+      position: absolute
+      right: 30px
+      top: 50px
+      width: 30px
+      height: 380px
+      border: 1px solid gray
+      display: flex
+      align-items: flex-end
+      pointer-events: none
+      user-select: none
+      .hp
+          width: 30px
+          min-height: 0px
+          max-height: 380px
+          background-color: red
+          pointer-events: none
+          user-select: none
+
+    .counter
+      position: absolute
+      right: 90px
+      top: 50px
+      color: #fff
+      font-size: 30px
+      animation: blink 1s infinite
+      pointer-events: none
+
+    .horror
+      z-index: 6
+      opacity: 0
+      position: absolute
+      display: flex
+      justify-content: center
+      top: -20px
+      left: -10px
+      width: 100%
+      height: 100%
+      user-select: none
+      pointer-events: none
+      img
+        width: 500px
+        height: auto
+        pointer-events: none
+
+    .text
+      font-size: 12px
+    .text1
+      top: 150px
+      left: 50px
+      animation: typing 3s steps(25, end) 1s forwards
+    .text2
+        top: 230px
+        left: 50px
+        animation: typing 3s steps(25, end) 5s forwards
+    .text3
+        top: 310px
+        left: 50px
+        animation: typing 3s steps(25, end) 9s forwards
+    .countdown
+      font-size: 40px
+      top: 320px
+      left: 270px
+      animation: blink 1s 12s infinite
+
+    .sprintline
+      z-index: 5
+      position: absolute
+      opacity: 0
+      top: 30px
+      left: 90px
+      width: auto
+      height: auto
+      user-select: none
+      pointer-events: none
+      img
+        width: 300px
+        height: 300px
+        pointer-events: none
 </style>
