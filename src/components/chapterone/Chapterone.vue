@@ -27,6 +27,8 @@ const emit = defineEmits(["finished", "isChtwo"]);
 
 const failmsghandler = () => {
   x.value = Math.floor(Math.random() * 10);
+  isHorror.value = false;
+
   imageSrc.value = import.meta.env.BASE_URL + `pictures/horror${x.value}.png`;
   switch (x.value) {
     case 0:
