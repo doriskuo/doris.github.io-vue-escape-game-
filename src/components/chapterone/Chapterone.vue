@@ -366,6 +366,9 @@ onUnmounted(() => {
       left: 100px
       animation: typing 3s steps(25, end) 9s forwards
   .countdown
+      color: gray
+      width: auto
+      opacity: 0
       font-size: 50px
       top: 320px
       left: 380px
@@ -410,15 +413,15 @@ onUnmounted(() => {
     animation: showup 2s 2s forwards
 
   .sprintline
-    z-index: 5
     position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -70%) scale(0.8)
+    display: flex
+    justify-content: center
     opacity: 0
-    top: -80px
-    left: 470px
-    width: auto
-    height: auto
-    user-select: none
     pointer-events: none
+    user-select: none
     img
       width: 500px
       height: 500px
@@ -432,15 +435,17 @@ onUnmounted(() => {
     z-index: 6
     opacity: 0
     position: absolute
+    display: flex
+    justify-content: center
     top: -80px
-    left: 250px
-    width: auto
-    height: auto
+    left: 0px
+    width: 100%
+    height: 100%
     user-select: none
     pointer-events: none
     img
-      width: 1000px
-      height: 800px
+      width: auto
+      height: 700px
       pointer-events: none
 
   .horror.active
@@ -463,7 +468,6 @@ onUnmounted(() => {
 
 @keyframes blink
   0%
-    width: auto
     transform: scale(1)
     opacity: 0
   50%
@@ -476,16 +480,15 @@ onUnmounted(() => {
 
 @keyframes smallblink
   0%
-    width: auto
-    transform: scale(0.8)
     opacity: 0
+    transform: translate(-50%, -70%) scale(0.8)
   50%
-    transform: scale(1.2)
     opacity: 1
+    transform: translate(-50%, -70%) scale(1.2)
 
   100%
     opacity: 0
-    transform: scale(0.8)
+    transform: translate(-50%, -70%) scale(0.8)
 
 @keyframes thriller
   0%
@@ -535,23 +538,6 @@ onUnmounted(() => {
       animation: blink 1s infinite
       pointer-events: none
 
-    .horror
-      z-index: 6
-      opacity: 0
-      position: absolute
-      display: flex
-      justify-content: center
-      top: -20px
-      left: -10px
-      width: 100%
-      height: 100%
-      user-select: none
-      pointer-events: none
-      img
-        width: 500px
-        height: auto
-        pointer-events: none
-
     .text
       font-size: 12px
     .text1
@@ -569,21 +555,6 @@ onUnmounted(() => {
     .countdown
       font-size: 40px
       top: 320px
-      left: 250px
+      left: 210px
       animation: blink 1s 12s infinite
-
-    .sprintline
-      z-index: 5
-      position: absolute
-      opacity: 0
-      top: 10px
-      left: 50px
-      width: auto
-      height: auto
-      user-select: none
-      pointer-events: none
-      img
-        width: 70vw
-        height: auto
-        pointer-events: none
 </style>
