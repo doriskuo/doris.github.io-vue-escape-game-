@@ -43,7 +43,7 @@
 
 ## 📸 成果展示
 
-（Demo 截圖、影片 / 或線上連結放這裡）
+- [網頁連結]（https://doriskuo.github.io/doris.github.io-vue-escape-game-/）
 
 ---
 
@@ -56,7 +56,7 @@ npm install
 # 啟動開發伺服器
 npm run dev
 
-打開 [http://localhost:5173](http://localhost:5173) 即可遊玩 🎮
+打開 [http://localhost:5173]即可遊玩 🎮
 
 ---
 
